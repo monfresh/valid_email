@@ -9,7 +9,7 @@ def config_file
 end
 
 def local_file
-  File.expand_path('config/valid_email.yml', __FILE__)
+  File.join(__dir__, 'config/valid_email.yml')
 end
 
 def gem_file
